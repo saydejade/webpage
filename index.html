@@ -1,33 +1,55 @@
 <!DOCTYPE html>
-    <html>
+<html>
 
-    <head>
-        <style>
-            #description {
-                background-color: blue;
-                color: orange;
-            }
-            body {
-                background-color: rgb(247, 250, 82);
-            }
-            h1 {
-                font-family: Verdana;
-                color: rgb(71, 118, 206);
-            }
-            #kyro {
-                height: 250px;
-            }
-        </style>
-    </head>
+<head>
+    <style>
+        #description {
+            background-color: blue;
+            color: orange;
+        }
+        body {
+            background-color: rgb(247, 250, 82);
+        }
+        h1 {
+            font-family: Verdana;
+            color: rgb(71, 118, 206);
+        }
+        #nav-container {
+            display: inline-block;
+            width: 100%;
+            background-color: rgb(41, 92, 151);
+        }
+        .nav-link {
+            height: 25px;
+            width: 250px;
+        }
+        .nav-link a {
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            color: orange;
+        }
+        .nav-link a:hover {
+            font-weight: bold;
+            text-decoration: underline;
+            background-color: orange;
+            color: blue;
+        }
+    </style>
+</head>
 
-    <body>
-        <h1>Kyro's Webpage</h1>
-        <div>
+<body>
+    <h1>Kyro's Webpage</h1>
+    <nav id="nav-container">
+        <span class="nav-link">
             <a href="./index.html">Homepage</a>
+        </span>
+        <span class="nav-link">
             <a href="./gallery.html">Gallery</a>
-        </div>
-    </body>
-    <footer>
-    </footer>
+        </span>
+    </nav>
+</body>
 
-    </html>
+<footer>
+</footer>
+
+</html>
